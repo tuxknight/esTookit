@@ -6,8 +6,8 @@ RUN apt-get update && apt-get install git python2.7-dev python-pip -y
 # add a user to run the web application
 RUN useradd -d /var/lib/tornado -u 1000 -m -s /bin/bash tornado
 # those COPY things seems dont work in jenkins
-## COPY ["MANIFEST.in", "README.md", "requirements.txt", "run.py", "setup.py", "/work/"]
-## COPY ["esTookit", "/work/esTookit"]
+##COPY ["MANIFEST.in", "README.md", "requirements.txt", "run.py", "setup.py", "/work/"]
+##COPY ["esTookit", "/work/esTookit"]
 RUN git clone http://chufy@10.13.182.124:7990/scm/es/estookit.git /work
 WORKDIR /work
 # install dependencies
