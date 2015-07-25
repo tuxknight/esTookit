@@ -15,7 +15,7 @@ RUN pip install -r /work/requirements.txt
 #install esTookit
 RUN python /work/setup.py install
 VOLUME /work
-#add tornado web server works on 5003
+# add tornado web server works on 5003
 EXPOSE 5003
 USER tornado
 CMD ["/usr/bin/python", "/work/run.py"]
