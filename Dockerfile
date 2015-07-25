@@ -10,12 +10,12 @@ RUN useradd -d /var/lib/tornado -u 1000 -m -s /bin/bash tornado
 ##COPY ["esTookit", "/work/esTookit"]
 RUN git clone http://chufy@10.13.182.124:7990/scm/es/estookit.git /work
 WORKDIR /work
-# install dependencies
+#install dependencies
 RUN pip install -r /work/requirements.txt
-# install esTookit
+#install esTookit
 RUN python /work/setup.py install
 VOLUME /work
-# add tornado web server works on 5003
+#add tornado web server works on 5003
 EXPOSE 5003
 USER tornado
 CMD ["/usr/bin/python", "/work/run.py"]
