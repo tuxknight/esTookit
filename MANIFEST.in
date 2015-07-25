@@ -1,0 +1,2 @@
+recursive-include esTookit/templates *
+recursive-include esTookit/static *
