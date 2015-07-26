@@ -17,7 +17,7 @@ def Views(lines=1):
     if lines > 20:
         lines = 20
     #assert isinstance(lines, int)
-    version="V-change_id-added"
+    version="V-verified-by-jenkins"
     current_time=datetime.strftime(datetime.now(),"%Y-%m-%d %H:%M:%S")
     return render_template('index.html', version=version, lines=lines, time=current_time)
 
