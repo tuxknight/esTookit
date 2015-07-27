@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -ex
 # render Dockerfile.template
 # git checkout -f $GERRIT_PATCHSET_REVISION
 FILE=./Dockerfile.template
