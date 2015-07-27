@@ -16,10 +16,5 @@ pip install -r requirements.txt
 python setup.py install
 python run.py
 ```
-
-You could also build an image using Dockerfile.
-
-```
-docker build -t flask_demo .
-```
-Gerrit
+If you are now using jenkins and gerrit, dockerfile.sh will generate a new Dockerfile
+from Dockerfile.template to make sure git can fetch the code in refs/changes .
